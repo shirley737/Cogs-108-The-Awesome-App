@@ -1,7 +1,24 @@
 <html>
 <title> Triton Dine</title>    
-<header> Purchase History</header>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">   
+    
 <style>
+    .center{
+		margin: auto;
+	}
+    .w3-bar {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100;
+		text-align: center;
+	}
+
+	.w3-button {
+		padding: 70px 0;
+		text-align: center;
+}
+    
 	header{
 		font-family: 'PT Sans Caption', sans-serif;
         font-size: 35px;
@@ -25,32 +42,18 @@
         background-color: #dddddd;
     }
     
-	.nav {
-    font-family: 'PT Sans Caption', sans-serif;
-    overflow: hidden;
-    animation-name: bar;
-    animation-duration: 1.5s;
-    animation-timing-function:ease;
-}
-    
-    .nav a {
-    align: center;
-    float:left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 40px 70px 22px 100px;
-    animation-name: bar;
-    animation-duration: 1.5s;
-    animation-timing-function:ease;
-}
-    .nav a:hover {
-    background-color: #ddd;
-    color: black; 
-}
-</style>    
-    
+</style>        
 <body>
+<div class="w3-container w3-card">
+  <h1>Triton Feed</h1>
+</div> 
+<br> 
+    
+<div class="w3-container">    
+<header> Purchase History</header>
+
+<div class="w3-cell-row">
+<div class="w3-cell w3-container center">
 <table align="center">
   <tr>
     <th>Item</th>
@@ -88,12 +91,18 @@
     <td>$5.24</td>
   </tr>
 </table>
-
-<div class="nav">
-  <a href="main.html">Home</a>
-  <a href="people.html">People</a>
-  <a href="contact.html">Contact</a>
-</div>    
+</div>  
+</div> 
+</div>  
     
+<br>    
+    
+<div class="w3-bar w3-border w3-light-grey">
+  <a href="homePage.html" class="w3-bar-item w3-button w3-green">Home</a>
+  <a href="history.html" class="w3-bar-item w3-button">Purchase History</a>
+  <a href="budgetPlan.html" class="w3-bar-item w3-button">Budget Plan</a>
+</div>
+    
+
 </body>
 </html>
