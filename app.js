@@ -34,9 +34,13 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+// app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
+app.get('/', index.homePage)
+app.get('/budgetPlan', index.budgetPlan)
+app.get('/history', index.history)
+app.get('/budgetTracker', index.budgetTracker)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
