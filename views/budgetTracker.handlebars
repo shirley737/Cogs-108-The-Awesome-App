@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>Smart Dine</title>
+<title>Triton Feed</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 <style>
 .smallRectangle {
@@ -21,7 +22,7 @@
 	float: left;
 }
 
-.rightRectangle {
+ .rightRectangle {
 	height: 50px;
 	width: 50px;
 	background-color: white;
@@ -29,7 +30,7 @@
 	float: left;
 }
 
-.smallRectangle2 {
+  .smallRectangle2 {
 	height: 50px;
 	width: 40px;
 	background-color: gray;
@@ -37,15 +38,38 @@
 	float: left;
 }
 
-.largeRectangle2 {
+   .largeRectangle2 {
 	height: 50px;
 	width: 210px;
 	background-color: white;
 	border:1px solid black; 
 	float: left;
 }
-</style>
+    .w3-bar {
+        margin-bottom: 0px;
+        position:fixed;
+		left: auto;
+		bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;   
+	}
 
+	.w3-button {
+		padding: 70px 0;
+		text-align: center;
+	}
+    
+    .container1{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .container2{
+        padding:5px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+</style>
 <body>
 
 <div class="w3-container w3-card">
@@ -53,29 +77,19 @@
 </div>
 
 <div class="w3-container">
-
-
 	<hr>
-	<div class="w3-cell-row">
-	  <div class="w3-cell" style="width:30%">
-	  </div>
-	  <div class="w3-cell w3-container center">
-	    <h2>Budget Tracker</h2>
+	  <div class="container1">
+          <h2><b>Budget Tracker</b></h2>
 	  </div>
 	</div>  
 
 <hr>
-	<div class="w3-cell-row">
-	  <div class="w3-cell" style="width:0%">
-	    <!--<img src="img_avatar.jpg" style="width:100%">-->
-	  </div>
 	  <div class="w3-cell w3-container center">
 	    <h3>Today</h3>
 	    <div class = "smallRectangle"></div>
 	    <div class = "largeRectangle"></div>
 	    <div class = "rightRectangle"></div>
 	  </div>
-	</div>  
 
 	<hr>
 	<div>
@@ -90,35 +104,10 @@
 	  </div>
 	</div>  
 
-</div>
-
 <div class="w3-bar w3-border w3-light-grey">
   <a href="/" class="w3-bar-item w3-button w3-green">Home</a>
   <a href="history" class="w3-bar-item w3-button">Purchase History</a>
   <a href="budgetPlan" class="w3-bar-item w3-button">Budget Plan</a>
 </div>
-
-
-<style>
-
-	.center{
-		margin: auto;
-	}
-
-	.w3-bar {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		width: 100;
-		text-align: center;
-	}
-
-	.w3-button {
-		padding: 70px 0;
-		text-align: center;
-	}
-
-
-</style>
-
-</body>
+</body>   
+</html>
