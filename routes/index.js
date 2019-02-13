@@ -32,3 +32,15 @@ exports.budgetTracker = function(req, res){
   res.render('budgetTracker');
 };
 
+exports.buySell = function(req, res){
+  res.render('buySell');
+};
+
+exports.buySell2 = function(req, res){
+  res.render('buySell2');
+};
+
+exports.buySell3 = function(req, res){
+  res.render('buySell3');
+};
+
