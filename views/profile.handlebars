@@ -6,23 +6,32 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    
 
 <body>
-    
-<div id ="container3">
-    <p><a href="profile.html"><img src="person.png" alt="person" style="width:48px;height:48px;border:0;"></a></p>
-    </div>
-    
-<div class="container1">
-    <h3> Hello, Emi!</h3>
+
+<div class="w3-container w3-card">
+  <h1>Triton Feed</h1>
 </div>
+
+<div class="container1">
+    <span class="dot"></span>
+    <h2> Emi Oda </h2>
+    <h5> Dinning Plan: $2080 </h5>
+</div>    
 
 <hr>
 	  
-	  <div class="container2">
-          <h2><b>Your Balance:</b></h2>
+<div class="container2">
+          <h3><b>Tel:858-247-1234</b></h3>
           <br>
-	    <h1>$400</h1>
-	  </div> 
+          <h3><b>Email: emi@ucsd.edu</b></h3>
+          <br>
+          <h3><b>Balance: $400</b></h3>
+          <br>
+</div> 
 
+<div class="container3">
+    <button id="logout">Log Out</button>
+</div> 
+    
 <hr>
     
 <div class="w3-bar w3-border w3-light-grey">
@@ -32,8 +41,24 @@
   <a href="buySell" class="w3-bar-item w3-button">Buy/Sell</a>
 </div>
 
+<script>
 
+    //put the log-in page name right here! :]
+ document.getElementById("logout").onclick = function () {
+        location.href = "";
+    };   
+    
+</script>  
+    
 <style>
+    .dot {
+        height: 80px;
+        width: 80px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+}
+    
 	.w3-bar {
         margin-bottom: 0px;
         position:fixed;
@@ -52,22 +77,28 @@
 		text-align: center;
 	}
     .container1{
-        margin-top: 30px;
+        margin-top: 50px;
         padding:10px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
     }
     .container2{
+        border-style: solid;
+        border-width: thin;
+        border-color: aliceblue;
+        margin-left: 50px;
+        margin-right:50px;
+        border-radius: 20px;
+        padding:10px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        background-color: aliceblue;
+    }
+    .container3{
         padding:20px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
     }
-
-    #container3{
-        margin-left: 15px;
-    }
-    
-    
     
 </style>
 </body>
