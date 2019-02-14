@@ -43,6 +43,7 @@ app.get('/budgetTracker', index.budgetTracker)
 app.get('/buySell', index.buySell)
 app.get('/buySell2', index.buySell2)
 app.get('/buySell3', index.buySell3)
+app.get('/buySell4', index.buySell4)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
