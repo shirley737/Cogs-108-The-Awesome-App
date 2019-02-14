@@ -51,3 +51,7 @@ exports.buySell4 = function(req, res){
 exports.buySell5 = function(req, res){
   res.render('buySell5');
 };
+
+exports.profile = function(req, res){
+  res.render('profile');
+};
