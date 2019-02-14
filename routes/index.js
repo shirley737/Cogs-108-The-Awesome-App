@@ -47,3 +47,7 @@ exports.buySell3 = function(req, res){
 exports.buySell4 = function(req, res){
   res.render('buySell4');
 };
+
+exports.buySell5 = function(req, res){
+  res.render('buySell5');
+};
