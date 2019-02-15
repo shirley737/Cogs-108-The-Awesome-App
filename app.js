@@ -36,7 +36,8 @@ if ('development' == app.get('env')) {
 
 // Example route
 // app.get('/users', user.list);
-app.get('/', index.homePage)
+app.get('/', index.login)
+app.get('/homePage', index.homePage)
 app.get('/budgetPlan', index.budgetPlan)
 app.get('/history', index.history)
 app.get('/budgetTracker', index.budgetTracker)

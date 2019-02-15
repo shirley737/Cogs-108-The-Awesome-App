@@ -55,3 +55,7 @@ exports.buySell3 = function(req, res){
 exports.profile = function(req, res){
   res.render('profile');
 };
+
+exports.login = function(req, res){
+  res.render('login');
+};
