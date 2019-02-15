@@ -48,8 +48,8 @@ exports.sellers = function(req, res){
   res.render('sellers');
 };
 
-exports.buySell5 = function(req, res){
-  res.render('buySell5');
+exports.buySell3 = function(req, res){
+  res.render('buySell3');
 };
 
 exports.profile = function(req, res){

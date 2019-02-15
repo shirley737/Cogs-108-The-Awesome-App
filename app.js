@@ -44,7 +44,7 @@ app.get('/buySell', index.buySell)
 app.get('/buySell2', index.buySell2)
 app.get('/buyers', index.buyers)
 app.get('/sellers', index.sellers)
-app.get('/buySell5', index.buySell5)
+app.get('/buySell3', index.buySell3)
 app.get('/profile', index.profile)
 
 http.createServer(app).listen(app.get('port'), function(){
