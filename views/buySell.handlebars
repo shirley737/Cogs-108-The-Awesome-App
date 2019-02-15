@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+<body>
+<div class="container1">
+	<hr>
+    <h2><b>Buy & Sell</b></h2>
+	</div>  
+
+<hr>
+	<div class="container2">
+	    <h3>I want to buy or sell:</h3>
+        <br>
+        <h5>$ <input type="text" id="input"></h5>
+        <br>
+        <br>
+        <button id="buyButton"> Buy </button>
+        <button id="sellButton"> Sell </button>
+	 </div>
+    
+     <div class="container2" id="result"> <h3> </h3> </div>
+    
+     <div class="container2">  
+     <button id="confirm" > Yes </button>
+     <button id="deny"> Back </button>   
+     </div>
+
+<div class="w3-bar w3-border w3-light-grey">
+  <a href="homePage.html" class="w3-bar-item w3-button w3-green">Home</a>
+  <a href="budgetPlan.html" class="w3-bar-item w3-button">Budget</a>
+  <a href="buySell.html" class="w3-bar-item w3-button">Buy/Sell</a>
+  <a href="budgetPlan.html" class="w3-bar-item w3-button">Inbox</a>
+</div>
+
+<script type="text/javascript">
+    
+ document.getElementById("buyButton").onclick=function(){
+     var amount = document.getElementById("input").value;
+     document.getElementById("result").innerHTML= "Are you sure you want to buy $" +amount;
+     document.getElementById("confirm").style.display="inline";
+     document.getElementById("deny").style.display="inline";
+     
+     document.getElementById("deny").onclick = function () {
+        location.href = "buySell";
+    };
+     
+     document.getElementById("confirm").onclick = function () {
+        window.location.href = "buySell2";
+    };
+ }
+ 
+ document.getElementById("sellButton").onclick=function(){
+     var amount = document.getElementById("input").value;
+     document.getElementById("result").innerHTML= "Are you sure you want to sell $"+amount;
+     document.getElementById("confirm").style.display="inline";
+     document.getElementById("deny").style.display="inline";
+     
+     document.getElementById("deny").onclick = function () {
+        location.href = "buySell";
+    };
+//  put next page's file name here 
+     document.getElementById("confirm").onclick = function () {
+        window.location.href = "buySell2";
+    };
+ }
+        
+</script>   
+<style>
+    
+    #confirm{
+        display: none;
+    }
+    
+    #deny{
+        display: none;
+    }
+	.center{
+		margin: auto;
+	}
+    
+    .w3-bar {
+        margin-bottom: 0px;
+        position:fixed;
+		left: auto;
+		bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;   
+	}
+	.w3-button {
+		padding: 70px 0;
+		text-align: center;
+	}
+    
+    .container1{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .container2{
+        margin: 40px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+</style>
+</body>
