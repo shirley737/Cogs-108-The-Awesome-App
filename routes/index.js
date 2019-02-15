@@ -59,3 +59,26 @@ exports.profile = function(req, res){
 exports.login = function(req, res){
   res.render('login');
 };
+
+exports.requestReceived2 = function(req, res){
+  res.render('requestReceived2');
+};
+
+exports.RequestAccepted = function(req, res){
+  res.render('RequestAccepted');
+};
+
+exports.inbox = function(req, res){
+  res.render('inbox');
+};
+
+exports.contactSeller = function(req, res){
+  res.render('contactSeller');
+};
+
+exports.print = function(req, res){
+  res.render('print');
+};
+
+
+
