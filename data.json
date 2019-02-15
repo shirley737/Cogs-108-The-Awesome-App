@@ -1,13 +1,34 @@
 {
 	"users": [
 		{
-			"name": "Emi Oda"
+			"imageURL": "http://lorempixel.com/100/100/people/9",
+			"name": "Emi Oda",
+			"amount": "$200"
 		},
 		{
-			"name": "Shirley Guo"
+			"imageURL": "http://lorempixel.com/100/100/people/10",
+			"name": "Shirley Guo",
+			"amount": "$500"
 		},
 		{
-			"name": "Valerie Lopez"
+			"imageURL": "http://lorempixel.com/100/100/people/8",
+			"name": "Valerie Lopez",
+			"amount": "$350"
+		},
+		{
+			"imageURL": "http://lorempixel.com/100/100/people/4",
+			"name": "Tom Smith",
+			"amount": "$80"
+		},
+		{
+			"imageURL": "http://lorempixel.com/100/100/people/5",
+			"name": "Lily Mopley",
+			"amount": "$640"
+		},
+		{
+			"imageURL": "http://lorempixel.com/100/100/people/6",
+			"name": "Steven Lee",
+			"amount": "$30"
 		}
 	]
 }
