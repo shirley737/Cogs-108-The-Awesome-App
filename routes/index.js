@@ -67,3 +67,18 @@ exports.requestReceived2 = function(req, res){
 exports.RequestAccepted = function(req, res){
   res.render('RequestAccepted');
 };
+
+exports.inbox = function(req, res){
+  res.render('inbox');
+};
+
+exports.contactSeller = function(req, res){
+  res.render('contactSeller');
+};
+
+exports.print = function(req, res){
+  res.render('print');
+};
+
+
+
