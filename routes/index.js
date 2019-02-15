@@ -40,12 +40,12 @@ exports.buySell2 = function(req, res){
   res.render('buySell2');
 };
 
-exports.buySell3 = function(req, res){
-  res.render('buySell3');
+exports.buyers = function(req, res){
+  res.render('buyers');
 };
 
-exports.buySell4 = function(req, res){
-  res.render('buySell4');
+exports.sellers = function(req, res){
+  res.render('sellers');
 };
 
 exports.buySell5 = function(req, res){

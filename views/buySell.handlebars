@@ -13,7 +13,7 @@
 
 <hr>
 	<div class="container2">
-	    <h3>I want to...</h3>
+	    <h3>I want to buy or sell:</h3>
         <br>
         <h5>$ <input type="text" id="input"></h5>
         <br>
@@ -40,7 +40,7 @@
     
  document.getElementById("buyButton").onclick=function(){
      var amount = document.getElementById("input").value;
-     document.getElementById("result").innerHTML= "Are you sure to buy $" +amount;
+     document.getElementById("result").innerHTML= "Are you sure you want to buy $" +amount;
      document.getElementById("confirm").style.display="inline";
      document.getElementById("deny").style.display="inline";
      
@@ -49,14 +49,14 @@
     };
      
 //  put next page's file name here 
-     document.getElementById("deny").onclick = function () {
-        location.href = "";
+     document.getElementById("confirm").onclick = function () {
+        window.location.href = "buySell2";
     };
  }
  
  document.getElementById("sellButton").onclick=function(){
      var amount = document.getElementById("input").value;
-     document.getElementById("result").innerHTML= "Are you sure to sell $"+amount;
+     document.getElementById("result").innerHTML= "Are you sure you want to sell $"+amount;
      document.getElementById("confirm").style.display="inline";
      document.getElementById("deny").style.display="inline";
      
@@ -64,8 +64,8 @@
         location.href = "buySell.html";
     };
 //  put next page's file name here 
-     document.getElementById("deny").onclick = function () {
-        location.href = "";
+     document.getElementById("confirm").onclick = function () {
+        window.location.href = "buySell2";
     };
  }
         
