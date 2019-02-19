@@ -26,7 +26,7 @@
     
      <div class="container2">  
      <button id="confirm" > Yes </button>
-     <button id="deny"> Back </button>   
+     <button id="deny"> No </button>   
      </div>
 
 <div class="w3-bar w3-border w3-light-grey">
@@ -40,7 +40,7 @@
     
  document.getElementById("buyButton").onclick=function(){
      var amount = document.getElementById("input").value;
-     document.getElementById("result").innerHTML= "Are you sure you want to buy $" +amount;
+     document.getElementById("result").innerHTML= "Are you sure you want to buy $" +amount+"?";
      document.getElementById("confirm").style.display="inline";
      document.getElementById("deny").style.display="inline";
      
@@ -56,7 +56,7 @@
  
  document.getElementById("sellButton").onclick=function(){
      var amount = document.getElementById("input").value;
-     document.getElementById("result").innerHTML= "Are you sure you want to sell $"+amount;
+     document.getElementById("result").innerHTML= "Are you sure you want to sell $"+amount+"?";
      document.getElementById("confirm").style.display="inline";
      document.getElementById("deny").style.display="inline";
      
