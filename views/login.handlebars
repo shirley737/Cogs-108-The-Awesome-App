@@ -3,6 +3,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<script src="/js/introHCI.js"></script>
+{{> facebook}}
+<script src="/js/facebook.js"></script>
 
 <body>
 	<div class="w3-cell-row">
@@ -28,6 +31,12 @@
         <br>    
 		<input type="submit" value="Login">
 		</form>
+
+		<hr>
+		<p class="facebookLogin">Or login with Facebook:</p>
+		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+		</fb:login-button>
+		<hr>
 
 	</div>
 
