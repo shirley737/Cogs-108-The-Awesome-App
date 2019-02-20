@@ -16,19 +16,19 @@
 	    <h3>Here are your unread messages:</h3>
     </div>
     
-    <div class="container3">
+    <div class="container3" id="mes1">
     2/19 <b>App Notification:</b> Your app is out of date, click here to...
     </div>
     
-    <div class="container3">
+    <div class="container3" id="mes2">
     2/19 <b>Buy Request:</b> Your received a new buy request, click here to...
     </div>
     
-    <div class="container3">
+    <div class="container3" id="mes3">
     2/19 <b>Free Event:</b> Pines is having a free food event tonight, check here...
     </div>
     
-    <div class="container3">
+    <div class="container3" id="mes4">
     2/18 <b>App Notification:</b> Congratulations! We received your buy request and will...
     </div>
     
@@ -48,15 +48,33 @@
  document.getElementById("back").onclick=function(){
      location.href = "homePage";}
      
-//  put next page's file name here 
-   //  document.getElementById("confirm").onclick = function () {
-     //   window.location.href = "buySell2";
-    //}
- //}
-        
+ document.getElementById("mes1").onclick=function () {
+     location.href =  "message1" }
+ 
+ document.getElementById("mes2").onclick=function () {
+     location.href = "message2";} 
+ 
+ document.getElementById("mes3").onclick=function () {
+     location.href = "message3";} 
+ 
+ document.getElementById("mes4").onclick=function () {
+     location.href = "message4";} 
 </script> 
     
 <style> 
+    #mes1{
+      text-align: center;
+    }
+    #mes2{
+      text-align: center;  
+    }
+    #mes3{
+      text-align: center;  
+    }
+    #mes4{
+      text-align: center;  
+    }
+    
     #back{
         text-align: center;
         font-family: 'Open Sans', sans-serif;
@@ -85,7 +103,7 @@
     }
     
     .container2{
-        margin: 40px;
+        margin: 30px;
         padding-bottom: 0px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
@@ -107,11 +125,6 @@
     .container3:hover
     {
       background-color: aliceblue;   
-    }
-    
-    .container3:visited
-    {
-      background-color: beige;
     }
     
 </style>
