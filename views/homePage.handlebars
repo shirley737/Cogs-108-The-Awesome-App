@@ -4,24 +4,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    
+<script src="/js/introHCI.js"></script>
+<script src="/js/facebook.js"></script>
 
 <body>
     
-<div id ="container3">
-    <p><a href="profile"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyAZkiP6SUoyEieBqaFL8XZpngh65bx8-yqMfOJFRGYebWJQ78" alt="person" style="width:48px;height:48px;border:0;"></a></p>
-    </div>
+<div id="top"><p><a href="profile"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyAZkiP6SUoyEieBqaFL8XZpngh65bx8-yqMfOJFRGYebWJQ78" alt="person" style="width:48px;height:48px;border:0;"></a></p>
+</div>
     
 <div class="container1">
-    <h3> Hello, Emi!</h3>
+    <h3 id="name">Hello, Emi!</h3>
 </div>
 
 <hr>
 	  
 	  <div class="container2">
           <h2><b>Your Balance:</b></h2>
-          <br>
 	    <h1>$400</h1>
 	  </div> 
+
+<hr>
+
+<div class="container1">    
+    <header><b> Purchase History</b></header>
+</div> 
+    <div class="form">
+<table align="center">
+  <tr>
+    <th>Item</th>
+    <th>Time</th>
+    <th>Amount</th>
+  </tr>
+  <tr>
+    <td>Chicken Pasta</td>
+    <td>11:59PM, 2/2/2019</td>
+    <td>$6.95</td>
+  </tr>
+  <tr>
+    <td>Ice Cream</td>
+    <td>2:30PM, 2/1/2019</td>
+    <td>$3.95</td>
+  </tr>
+  <tr>
+    <td>Spring Roll</td>
+    <td>11:20AM, 2/1/2019</td>
+    <td>$3.50</td>
+  </tr>
+  <tr>
+    <td>Scrambled Egg</td>
+    <td>10:00AM, 2/1/2019</td>
+    <td>$1.75</td>
+  </tr>
+  <tr>
+    <td>Ramen Soup</td>
+    <td>11:34AM, 1/29/2019</td>
+    <td>$10.00</td>
+  </tr>
+  <tr>
+    <td>Salad Bar</td>
+    <td>10:01AM, 1/29/2019</td>
+    <td>$5.24</td>
+  </tr>
+</table> 
+    </div>
+<br>
 
 <hr>
     
@@ -34,6 +80,10 @@
 
 
 <style>
+    #top{
+        float:left;
+        position:fixed;
+    }
 	.w3-bar {
         margin-bottom: 0px;
         position:fixed;
@@ -52,19 +102,28 @@
 		text-align: center;
 	}
     .container1{
-        margin-top: 30px;
+        margin-top: 10px;
         padding:10px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
     }
     .container2{
-        padding:20px;
+        padding:10px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
     }
 
     #container3{
         margin-left: 15px;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
     }
     
     

@@ -12,21 +12,21 @@
 	</div>  
 
 <hr>
-	<div class="container2">
+	<div class="container2" id = "light">
 	    <h3>I want to buy or sell:</h3>
         <br>
         <h5>$ <input type="text" id="input"></h5>
         <br>
         <br>
-        <button id="buyButton"> Buy </button>
-        <button id="sellButton"> Sell </button>
+        <button id="buyButton" class="button"> Buy </button>
+        <button id="sellButton" class="button"> Sell </button>
 	 </div>
     
      <div class="container2" id="result"> <h3> </h3> </div>
     
-     <div class="container2">  
-     <button id="confirm" > Yes </button>
-     <button id="deny"> Back </button>   
+     <div class="container2" id="dark">  
+     <button id="confirm" class="button" > Yes </button>
+     <button id="deny" class="button"> No </button>   
      </div>
 
 <div class="w3-bar w3-border w3-light-grey">
@@ -40,7 +40,7 @@
     
  document.getElementById("buyButton").onclick=function(){
      var amount = document.getElementById("input").value;
-     document.getElementById("result").innerHTML= "Are you sure you want to buy $" +amount;
+     document.getElementById("result").innerHTML= "Are you sure you want to buy $" +amount+"?";
      document.getElementById("confirm").style.display="inline";
      document.getElementById("deny").style.display="inline";
      
@@ -56,7 +56,7 @@
  
  document.getElementById("sellButton").onclick=function(){
      var amount = document.getElementById("input").value;
-     document.getElementById("result").innerHTML= "Are you sure you want to sell $"+amount;
+     document.getElementById("result").innerHTML= "Are you sure you want to sell $"+amount+"?";
      document.getElementById("confirm").style.display="inline";
      document.getElementById("deny").style.display="inline";
      
@@ -96,6 +96,19 @@
 		text-align: center;
 	}
     
+ .button {
+     background-color: rgba(49, 152, 240, 0.74);
+     border: none;
+     color: white;
+     padding: 8px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+     border-radius:10px;
+}
     .container1{
         text-align: center;
         font-family: 'Open Sans', sans-serif;
@@ -108,5 +121,11 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 20px;
     }
+   
+    #light{
+       background-color:rgba(194, 233, 245, 0.82);
+       border-radius:20px;
+    }
+    
 </style>
 </body>

@@ -52,6 +52,10 @@ app.get('/RequestAccepted', index.RequestAccepted)
 app.get('/inbox', index.inbox)
 app.get('/contactSeller', index.contactSeller)
 app.get('/print', index.print)
+app.get('/message1', index.message1)
+app.get('/message2', index.message2)
+app.get('/message3', index.message3)
+app.get('/message4', index.message4)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

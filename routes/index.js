@@ -87,5 +87,21 @@ exports.print = function(req, res){
   res.render('print');
 };
 
+exports.message1 = function(req, res){
+  res.render('message1');
+};
+
+exports.message2 = function(req, res){
+  res.render('message2');
+};
+
+exports.message3 = function(req, res){
+  res.render('message3');
+};
+
+exports.message4 = function(req, res){
+  res.render('message4');
+};
+
 
 
