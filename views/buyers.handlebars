@@ -13,7 +13,10 @@
     </div>  
 
 <hr>
-    <div class="container2">
+{{#each users}}
+    <div class="container2" class="users" description={{description}}>
+        <a href = "users" class ="thumbnail">
+            <img src = "images/{{image}}" class= "img">
         <table style="width:100%">
             <tr>
                 <th>
@@ -30,6 +33,7 @@
             </tr>
         </table>
     </div> 
+{{/each}}
     
 <hr>
     

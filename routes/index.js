@@ -13,7 +13,14 @@ exports.view = function(request, response){
  */
 
 exports.view = function(req, res){
-  res.render('index');
+  res.render('index',{
+    "users": [
+    { "imageURL": "http://lorempixel.com/100/100/people/9",
+      "name": "Emi Oda",
+      "amount": "$200"
+    },
+    ]
+  });
 };
 
 exports.homePage = function(req, res){
