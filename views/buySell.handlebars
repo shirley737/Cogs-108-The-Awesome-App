@@ -18,15 +18,15 @@
         <h5>$ <input type="text" id="input"></h5>
         <br>
         <br>
-        <button id="buyButton"> Buy </button>
-        <button id="sellButton"> Sell </button>
+        <button id="buyButton" class="button"> Buy </button>
+        <button id="sellButton" class="button"> Sell </button>
 	 </div>
     
      <div class="container2" id="result"> <h3> </h3> </div>
     
      <div class="container2" id="dark">  
-     <button id="confirm" > Yes </button>
-     <button id="deny"> No </button>   
+     <button id="confirm" class="button" > Yes </button>
+     <button id="deny" class="button"> No </button>   
      </div>
 
 <div class="w3-bar w3-border w3-light-grey">
@@ -96,6 +96,19 @@
 		text-align: center;
 	}
     
+ .button {
+     background-color: rgba(49, 152, 240, 0.74);
+     border: none;
+     color: white;
+     padding: 8px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+     border-radius:10px;
+}
     .container1{
         text-align: center;
         font-family: 'Open Sans', sans-serif;
