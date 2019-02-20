@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>Triton Feed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+<body>
+<div class="container1">
+	<hr>
+    <h2><b>Inbox</b></h2>
+	</div>  
+
+<hr>
+    <div class="container2">
+	    <h3>Here are your unread messages:</h3>
+    </div>
+    
+    <div class="container3">
+    2/19 <b>App Notification:</b> Your app is out of date, click here to...
+    </div>
+    
+    <div class="container3">
+    2/19 <b>Buy Request:</b> Your received a new buy request, click here to...
+    </div>
+    
+    <div class="container3">
+    2/19 <b>Free Event:</b> Pines is having a free food event tonight, check here...
+    </div>
+    
+    <div class="container3">
+    2/18 <b>App Notification:</b> Congratulations! We received your buy request and will...
+    </div>
+    
+    <div class="container2">
+    <button id="back"> Back to Home </button>
+    </div>
+    
+<div class="w3-bar w3-border w3-light-grey">
+  <a href="homePage" class="w3-bar-item w3-button w3-green">Home</a>
+  <a href="budgetPlan" class="w3-bar-item w3-button">Budget</a>
+  <a href="buySell" class="w3-bar-item w3-button">Buy/Sell</a>
+  <a href="inbox" class="w3-bar-item w3-button">Inbox</a>
+</div>
+
+<script type="text/javascript">
+    
+ document.getElementById("back").onclick=function(){
+     location.href = "homePage";}
+     
+//  put next page's file name here 
+   //  document.getElementById("confirm").onclick = function () {
+     //   window.location.href = "buySell2";
+    //}
+ //}
+        
+</script> 
+    
+<style> 
+    #back{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+	}
+    
+	.center{
+		margin: auto;
+	}
+    
+    .w3-bar {
+        margin-bottom: 0px;
+        position:fixed;
+		left: auto;
+		bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;   
+	}
+	.w3-button {
+		padding: 70px 0;
+		text-align: center;
+	}
+    
+    .container1{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .container2{
+        margin: 40px;
+        padding-bottom: 0px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    .container3{
+      width: 450px;
+      height: 80px;
+      background-color: rgb(199, 248, 248); 
+      color:#474450;
+      border-radius: 15px;
+      margin: auto; 
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .container3:hover
+    {
+      background-color: aliceblue;   
+    }
+    
+    .container3:visited
+    {
+      background-color: beige;
+    }
+    
+</style>
+</body>
