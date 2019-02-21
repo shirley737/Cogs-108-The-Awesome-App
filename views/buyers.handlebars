@@ -13,15 +13,17 @@
     </div>  
 
 <hr>
-    <div class="container2">
+{{#each users}}
+    <div class="container2" class="users">
+        <a href = "users" class ="thumbnail">
         <table style="width:100%">
             <tr>
                 <th>
-                    <img src="http://lorempixel.com/100/100/people/9">
+                    <img src="{{this.imageURL}}">
                 </th>
                 <th>
-                    <p>Person 1</p>
-                    <h3>$_______</h3>
+                    <p>{{name}}</p>
+                    <h3>{{amount}}</h3>
                 </th> 
                 <th>
                     <input type="button" id="sendButton" value="Send Request to Sell To" onclick="window.location.href='requestReceived2'" />
@@ -30,9 +32,10 @@
             </tr>
         </table>
     </div> 
+{{/each}}
     
 <hr>
-    
+    <!--
     <div class="container2">
         <table style="width:100%">
             <tr>
@@ -145,7 +148,7 @@
             </tr>
         </table>
     </div> 
-
+-->
 <hr>
 
 <div class="w3-bar w3-border w3-light-grey">

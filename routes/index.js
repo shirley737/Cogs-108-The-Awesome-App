@@ -2,18 +2,9 @@
 // load JSON fake "database" file into the data variable
 var data = require('../data.json');
 
-exports.view = function(request, response){
-	console.log(data);
-	response.render('index', data);
-};
-
-
-/*
- * GET home page.
- */
 
 exports.view = function(req, res){
-  res.render('index');
+  res.render('index', data);
 };
 
 exports.homePage = function(req, res){
@@ -41,11 +32,73 @@ exports.buySell2 = function(req, res){
 };
 
 exports.buyers = function(req, res){
-  res.render('buyers');
+  res.render('buyers',{
+    "users": [
+    { "imageURL": "http://lorempixel.com/100/100/people/9",
+      "name": "Emi Oda",
+      "amount": "$200"
+    },
+    { "imageURL": "http://lorempixel.com/100/100/people/10",
+      "name": "Shirley Guo",
+      "amount": "$500"
+    },
+    {
+      "imageURL": "http://lorempixel.com/100/100/people/8",
+      "name": "Valerie Lopez",
+      "amount": "$350"
+    },
+    {
+      "imageURL": "http://lorempixel.com/100/100/people/4",
+      "name": "Tom Smith",
+      "amount": "$80"
+    },
+    {
+      "imageURL": "http://lorempixel.com/100/100/people/5",
+      "name": "Lily Mopley",
+      "amount": "$640"
+    },
+    {
+      "imageURL": "http://lorempixel.com/100/100/people/6",
+      "name": "Steven Lee",
+      "amount": "$30"
+    }
+    ]
+  });
 };
 
 exports.sellers = function(req, res){
-  res.render('sellers');
+  res.render('sellers',{
+     "users": [
+    { "imageURL": "http://lorempixel.com/100/100/people/9",
+      "name": "Emi Oda",
+      "amount": "$200"
+    },
+    { "imageURL": "http://lorempixel.com/100/100/people/10",
+      "name": "Shirley Guo",
+      "amount": "$500"
+    },
+    {
+      "imageURL": "http://lorempixel.com/100/100/people/8",
+      "name": "Valerie Lopez",
+      "amount": "$350"
+    },
+    {
+      "imageURL": "http://lorempixel.com/100/100/people/4",
+      "name": "Tom Smith",
+      "amount": "$80"
+    },
+    {
+      "imageURL": "http://lorempixel.com/100/100/people/5",
+      "name": "Lily Mopley",
+      "amount": "$640"
+    },
+    {
+      "imageURL": "http://lorempixel.com/100/100/people/6",
+      "name": "Steven Lee",
+      "amount": "$30"
+    }
+    ]
+  });
 };
 
 exports.buySell3 = function(req, res){
