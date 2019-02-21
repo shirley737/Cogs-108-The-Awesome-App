@@ -24,8 +24,8 @@
 <div id="info">  </div>   
     
 <div class="container3">
-    <button id="back1"> Back to Home </button>
-    <button id="back2"> Contact Info </button>
+    <button id="back1" class="button"> Back </button>
+    <button id="back2" class="button"> Contact Info </button>
     </div> 
     
 <hr>
@@ -39,7 +39,7 @@
 
 <script type="text/javascript">   
  document.getElementById("back1").onclick=function(){
-     location.href = "homePage"; }  
+     location.href = "inbox"; }  
  
  
  $("#back2").click(function(){
@@ -95,6 +95,29 @@
         padding:20px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
+    }
+
+    .button {
+        background-color: rgba(49, 152, 240, 0.74);
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius:10px;
+    }
+    
+    .button:hover {
+        background-color: rgba(34, 214, 145, 0.73);
+    }    
+   
+    #light{
+       background-color:rgba(194, 233, 245, 0.82);
+       border-radius:20px;
     }
     
 </style>

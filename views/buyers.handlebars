@@ -15,7 +15,7 @@
 <hr>
 {{#each users}}
     <div class="container2" class="users">
-        <a href = "users" class ="thumbnail">
+        <a href = "requestReceived2" class ="thumbnail">
         <table style="width:100%">
             <tr>
                 <th>
@@ -26,7 +26,7 @@
                     <h3>{{amount}}</h3>
                 </th> 
                 <th>
-                    <input type="button" id="sendButton" value="Send Request to Sell To" onclick="window.location.href='requestReceived2'" />
+                    <input type="button" class="button" id="sendButton" value="Send Request to Sell To" onclick="window.location.href='requestReceived2'" />
                 </th>
 
             </tr>
@@ -188,6 +188,29 @@
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-size: 12px;
+    }
+
+    .button {
+        background-color: rgba(49, 152, 240, 0.74);
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius:10px;
+    }
+    
+    .button:hover {
+        background-color: rgba(34, 214, 145, 0.73);
+    }    
+   
+    #light{
+       background-color:rgba(194, 233, 245, 0.82);
+       border-radius:20px;
     }
 
 </style>

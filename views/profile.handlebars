@@ -25,7 +25,7 @@
 </div> 
 
 <div class="container3">
-    <input type="button" value="Log Out" onclick="window.location.href='/'" />
+    <input type="button" class="button" value="Log Out" onclick="window.location.href='/'" />
 </div> 
     
 <hr>
@@ -86,6 +86,29 @@
         padding:20px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
+    }
+
+    .button {
+        background-color: rgba(49, 152, 240, 0.74);
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius:10px;
+    }
+    
+    .button:hover {
+        background-color: rgba(34, 214, 145, 0.73);
+    }    
+   
+    #light{
+       background-color:rgba(194, 233, 245, 0.82);
+       border-radius:20px;
     }
     
 </style>
