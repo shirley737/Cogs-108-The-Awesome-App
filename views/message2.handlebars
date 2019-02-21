@@ -3,7 +3,8 @@
 <title>Triton Feed</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <body>
 
@@ -16,12 +17,15 @@
 <hr>
 	  
 <div class="container2">
-          Emily requested to sell $300 dinning dollars to you. Please contact her by email (yus@ucsd.edu) or phone calls (858-247-7475).
+          Emily requested to sell $300 dinning dollars to you. Start contact her now! 
     
 </div> 
 
+<div id="info">  </div>   
+    
 <div class="container3">
-    <button id="back"> Back to Home </button>
+    <button id="back1"> Back to Home </button>
+    <button id="back2"> Contact Info </button>
     </div> 
     
 <hr>
@@ -34,14 +38,29 @@
 </div>
 
 <script type="text/javascript">   
- document.getElementById("back").onclick=function(){
-     location.href = "homePage"; }      
+ document.getElementById("back1").onclick=function(){
+     location.href = "homePage"; }  
+ 
+ 
+ $("#back2").click(function(){
+  $("#info").html("Tel:858-247-1234 <br> Email:yug123@ucsd.edu");
+});
+ 
 </script>    
     
     
     
 <style>
-    #back{
+    #info{
+        text-align: center;
+    }
+    
+    #back1{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+	}
+    
+    #back2{
         text-align: center;
         font-family: 'Open Sans', sans-serif;
 	}
