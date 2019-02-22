@@ -19,17 +19,12 @@
 	    <h3>Request sent!</h3>
 	    <h4>We will notify you when the user has accepted or rejected your request.</h4>
 
-	    <div align="center">
-			<form action="buyconfirmation.html">
-			<input type="button" value="Contact Seller" onclick="window.location.href='contactSeller'" />
-			</form>
-		</div>
-
-		<h3> or..</h3>
-
+	   	<br>
+	   	<hr>
+	   	<br>
 		<div align="center">
 			<form action="sellconfirmation.html">
-			<input type="button" value="Print Confirmation" onclick="window.location.href='print'" />
+			<input type="button" class="button" value="Back to Home" onclick="window.location.href='homePage'" />
 			</form>
 		</div>
 
@@ -64,6 +59,29 @@
 		padding: 70px 0;
 		text-align: center;
 	}
+
+	.button {
+        background-color: rgba(49, 152, 240, 0.74);
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius:10px;
+    }
+    
+    .button:hover {
+        background-color: rgba(34, 214, 145, 0.73);
+    }    
+   
+    #light{
+       background-color:rgba(194, 233, 245, 0.82);
+       border-radius:20px;
+    }
 
 
 </style>
