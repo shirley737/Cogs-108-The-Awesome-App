@@ -151,6 +151,10 @@
 -->
 <hr>
 
+<div class="container2">
+    <button id="back" class="button"> Back to Home</button>
+    </div>
+
 <div class="w3-bar w3-border w3-light-grey">
   <a href="homePage" class="w3-bar-item w3-button w3-green">Home</a>
   <a href="budgetPlan" class="w3-bar-item w3-button">Budget</a>
@@ -158,8 +162,16 @@
   <a href="inbox" class="w3-bar-item w3-button">Inbox</a>
 </div>
 
+<script type="text/javascript"> 
+ document.getElementById("back").onclick=function(){
+     location.href = "homePage";}
+</script> 
 
 <style>
+    #back{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
     .center{
         margin: auto;
     }
