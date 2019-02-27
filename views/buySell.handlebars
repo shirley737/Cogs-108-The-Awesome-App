@@ -73,6 +73,13 @@ ga('send', 'pageview');
  
  document.getElementById("sellButton").onclick=function(){
      var amount = document.getElementById("input").value;
+     
+     if(isNaN(amount)){
+         alert("Please enter a valid number!");
+     } else{
+         if (amount > 400) {
+         alert("Please enter a smaller amount!");
+     }else{
      document.getElementById("result").innerHTML= "Are you sure you want to sell $"+amount+"?";
      document.getElementById("confirm").style.display="inline";
      document.getElementById("deny").style.display="inline";
@@ -83,10 +90,13 @@ ga('send', 'pageview');
 //  put next page's file name here 
      document.getElementById("confirm").onclick = function () {
         window.location.href = "buySell2";
-    };
+            };
+        }
+     }
  }
         
-</script>   
+</script>
+    
 <style>
     
     #confirm{
