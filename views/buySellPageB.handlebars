@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Triton Feed</title>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135186913-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+
+
+<body>
+<div class="container1">
+	<hr>
+    <h2><b>Buy & Sell</b></h2>
+	</div>  
+
+<hr>
+	<div class="row">
+        <div class="column">
+            <div class="containerB" id = "light">
+                <dialog id="dialog1">
+                    <p>This will take you to a list of people who are looking for someone to buy from or sell to so you can contact someone to make an exchange with immediately.</p>
+                    <button id="close">Close</button>
+                </dialog>
+                <button id="show" class="buttonDiag">?</button>
+                <script> 
+                var dialog = document.querySelector("#dialog1");
+                document.querySelector('#show').onclick = function() { 
+                    dialog.show(); 
+                }; 
+                document.querySelector('#close').onclick = function() { 
+                    dialog.close(); 
+                }; 
+                </script>
+                <h4>Search now to</h4>
+                <input type="button" class="button" value="Buy" onclick="window.location.href='sellers'" />
+                <input type="button" class="button" value="Sell" onclick="window.location.href='buyers'" />
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="containerB" id="light">
+                <dialog id="dialog2">
+                    <p>This will put you on the list of buyers or sellers so that others can find you and contact you if they wish to make an exchange with you</p>
+                    <button id="close2">Close</button>
+                </dialog>
+                <button id="show2" class="buttonDiag">?</button>
+                <script> 
+                var dialog2 = document.querySelector("#dialog2");
+                document.querySelector('#show2').onclick = function() { 
+                    dialog2.show(); 
+                }; 
+                document.querySelector('#close2').onclick = function() { 
+                    dialog2.close(); 
+                }; 
+                </script>
+                
+                <h4>Put in a request</h4>
+                <input type="button" class="button" id="sendButton" value="Go" onclick="window.location.href='buySell'" />
+            </div>
+        </div>
+    </div> 
+
+<div class="w3-bar w3-border w3-light-grey">
+  <a href="homePage" class="w3-bar-item w3-button w3-green">Home</a>
+  <a href="budgetPlan" class="w3-bar-item w3-button">Budget</a>
+  <a href="buySell" class="w3-bar-item w3-button">Buy/Sell</a>
+  <a href="inbox" class="w3-bar-item w3-button">Inbox</a>
+</div>
+
+    
+<style>
+    #confirm{
+        display: none;
+    }
+    #deny{
+        display: none;
+    }
+	.center{
+		margin: auto;
+	}
+    
+    .w3-bar {
+        margin-bottom: 0px;
+        position:fixed;
+		left: auto;
+		bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;   
+	}
+	.w3-button {
+		padding: 70px 0;
+		text-align: center;
+	}
+    
+ .button {
+     background-color: rgba(49, 152, 240, 0.74);
+     border: none;
+     color: white;
+     padding: 8px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 2px 1px;
+     cursor: pointer;
+     border-radius:10px;
+}
+
+.buttonDiag {
+     background-color: black;
+     border: none;
+     color: white;
+     padding: 3px 7px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 12px;
+     margin: 4px 2px;
+     cursor: pointer;
+     position: absolute;
+     right: 0;
+     border-radius:10px;
+}
+    
+.button:hover {
+  background-color: rgba(34, 214, 145, 0.73);
+}    
+    
+    .container1{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .containerB{
+        margin: 20px;
+        padding: 20px;
+        padding-top: 10px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        position: relative;
+        font-size: 16px;
+    }
+   
+    #light{
+       background-color:rgba(194, 233, 245, 0.82);
+       border-radius:20px;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    
+</style>
+
+</body>
