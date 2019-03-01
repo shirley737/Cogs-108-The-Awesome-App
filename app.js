@@ -41,7 +41,7 @@ app.get('/homePage', index.homePage)
 app.get('/budgetPlan', index.budgetPlan)
 app.get('/history', index.history)
 app.get('/budgetTracker', index.budgetTracker)
-app.get('/buySell', index.buySell)
+app.get('/buySellPageA', index.buySell)
 app.get('/buySell2', index.buySell2)
 app.get('/buyers', index.buyers)
 app.get('/sellers', index.sellers)
@@ -56,6 +56,7 @@ app.get('/message1', index.message1)
 app.get('/message2', index.message2)
 app.get('/message3', index.message3)
 app.get('/message4', index.message4)
+app.get('/buySellPageB', index.buySellPageB)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

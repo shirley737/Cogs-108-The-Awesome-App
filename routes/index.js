@@ -149,5 +149,6 @@ exports.message4 = function(req, res){
   res.render('message4');
 };
 
-
-
+exports.buySellPageB = function(req, res){
+  res.render('buySellpageB');
+};
