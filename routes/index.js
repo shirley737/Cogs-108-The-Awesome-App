@@ -150,5 +150,5 @@ exports.message4 = function(req, res){
 };
 
 exports.buySellPageB = function(req, res){
-  res.render('buySellpageB');
+  res.render('buySellPageB');
 };
