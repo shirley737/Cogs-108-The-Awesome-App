@@ -34,14 +34,12 @@ ga('send', 'pageview');
 			<img src="https://image.spreadshirtmedia.com/image-server/v1/mp/designs/12044341,width=178,height=178,version=1343984838/trident-neptune.png" width="50" height="50">
 		<h4>Login using your Online Card Office username and password:</h4>
 		
-		<form action="homePage">
         <br>
-		Username: <input type="text" value=""><br>
+		Username: <input type="text" id="name" placeholder="Student ID without 'A'"><br>
         <br>
-		Password: <input type="password" value=""><br>
+		Password: <input type="password" id="password"><br>
         <br>    
-		<input type="submit" class="button" value="Login">
-		</form>
+		<button id="login" class="button"> Start Budgeting! </button>
 
 		<hr>
 		<p class="facebookLogin">Or login with Facebook:</p>
@@ -51,6 +49,26 @@ ga('send', 'pageview');
 
 	</div>
 
+<script type="text/javascript">
+    
+ document.getElementById("login").onclick=function(){
+     var name = document.getElementById("name").value;
+     var pass = document.getElementById("password").value;
+     
+     if(isNaN(name)){
+         alert("Please enter a valid student ID!");
+     } 
+     if(pass == "") {
+         alert("Please enter a valid password!");
+     }  
+     else{
+     location.href = "homePage"; 
+    };
+     
+ }
+</script>
+    
+    
 <style>
 	.button {
         background-color: rgba(49, 152, 240, 0.74);
