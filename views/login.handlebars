@@ -37,7 +37,7 @@ ga('send', 'pageview');
         <br>
 		Username: <input type="text" id="name" placeholder="Student ID without 'A'"><br>
         <br>
-		Password: <input type="password" id="password"><br>
+		Password: <input type="password" id="password" placeholder="Your account password"><br>
         <br>    
 		<button id="login" class="button"> Start Budgeting! </button>
 
@@ -55,10 +55,10 @@ ga('send', 'pageview');
      var name = document.getElementById("name").value;
      var pass = document.getElementById("password").value;
      
-     if(isNaN(name)){
+     if((isNaN(name))||(name=="")){
          alert("Please enter a valid student ID!");
      } 
-     if(pass == "") {
+     else if(pass == "") {
          alert("Please enter a valid password!");
      }  
      else{
