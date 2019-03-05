@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Triton Feed</title>
+	<title>Triton Feed</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+	<script src="/js/introHCI.js"></script>
+	
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -44,8 +48,8 @@ ga('send', 'pageview');
                 }; 
                 </script>
                 <h4>Search now to</h4>
-                <input type="button" class="button" value="Buy" onclick="window.location.href='sellers'" />
-                <input type="button" class="button" value="Sell" onclick="window.location.href='buyers'" />
+                <input type="button" class="search" value="Buy" onclick="window.location.href='sellers'" />
+                <input type="button" class="search" value="Sell" onclick="window.location.href='buyers'" />
             </div>
         </div>
 
@@ -67,7 +71,7 @@ ga('send', 'pageview');
                 </script>
                 
                 <h4>Put in a request</h4>
-                <input type="button" class="button" id="sendButton" value="Go" onclick="window.location.href='buySellPageA'" />
+                <input type="button" class="request" id="sendButton" value="Go" onclick="window.location.href='buySellPageA'" />
             </div>
         </div>
     </div> 
@@ -105,6 +109,34 @@ ga('send', 'pageview');
 	}
     
  .button {
+     background-color: rgba(49, 152, 240, 0.74);
+     border: none;
+     color: white;
+     padding: 8px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 2px 1px;
+     cursor: pointer;
+     border-radius:10px;
+}
+
+.search {
+     background-color: rgba(49, 152, 240, 0.74);
+     border: none;
+     color: white;
+     padding: 8px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 2px 1px;
+     cursor: pointer;
+     border-radius:10px;
+}
+
+.request {
      background-color: rgba(49, 152, 240, 0.74);
      border: none;
      color: white;
