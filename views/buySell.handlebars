@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Triton Feed</title>
+    <title>Triton Feed</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/introHCI.js"></script>
+    
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -30,8 +34,8 @@ ga('send', 'pageview');
         <h5>$ <input type="text" id="input"></h5>
         <br>
         <br>
-        <button id="buyButton" class="button"> Buy </button>
-        <button id="sellButton" class="button"> Sell </button>
+        <button id="buyButton" class="request"> Buy </button>
+        <button id="sellButton" class="request"> Sell </button>
 	 </div>
     
      <div class="container2" id="result"> <h3> </h3> </div>
@@ -123,6 +127,20 @@ ga('send', 'pageview');
 	}
     
  .button {
+     background-color: rgba(49, 152, 240, 0.74);
+     border: none;
+     color: white;
+     padding: 8px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+     border-radius:10px;
+}
+
+.request {
      background-color: rgba(49, 152, 240, 0.74);
      border: none;
      color: white;

@@ -10,7 +10,8 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.project a').click(addProjectDetails);
-
+	$('.search').click(userClickSearch);
+	$('.request').click(userClickRequest);
 	// $('#colorBtn').click(randomizeColors);
 }
 
@@ -27,4 +28,12 @@ function addProjectDetails(e) {
 	var idNumber = projectID.substr('project'.length);
 
 	console.log("User clicked on project " + idNumber);
+}
+
+function userClickSearch(event) {
+	ga('send', 'event', 'search', 'click');
+}
+
+function userClickRequest(event) {
+	ga('send', 'event', 'request', 'click');
 }
