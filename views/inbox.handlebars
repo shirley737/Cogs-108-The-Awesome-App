@@ -47,12 +47,16 @@ ga('send', 'pageview');
     <div class="container2">
     <button id="back" class="button"> Back to Home</button>
     </div>
+    <br><br><br><br>
     
-<div class="w3-bar w3-border w3-light-grey">
-  <a href="homePage" class="w3-bar-item w3-button w3-green">Home</a>
-  <a href="budgetPlan" class="w3-bar-item w3-button">Budget</a>
-  <a href="buySellPageA" class="w3-bar-item w3-button">Buy/Sell</a>
-  <a href="inbox" class="w3-bar-item w3-button">Notifications</a>
+<!--navigation bar below -->  
+<div>
+  <ul class="nav">
+    <li><a href="homePage"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Home_font_awesome.svg/768px-Home_font_awesome.svg.png" style="width:38px;height:38px;border:0;"><br>Home</a></li>
+    <li><a href="budgetPlan"><img src="https://cdn0.iconfinder.com/data/icons/content-5/100/bill-512.png" style="width:38px;height:38px;border:0;"><br>Budget</a></li>
+    <li><a href="buySellPageA"><img src="https://www.svgrepo.com/show/1261/money.svg" style="width:38px;height:38px;border:0;"><br>Buy/Sell</a></li>
+    <li><a href="inbox"><img src="https://cdn1.iconfinder.com/data/icons/ui-22/24/391-512.png" style="width:38px;height:38px;border:0;"><br>Notifications</a></li>
+  </ul>
 </div>
 
 <script type="text/javascript">
@@ -74,6 +78,48 @@ ga('send', 'pageview');
 </script> 
     
 <style> 
+    body{
+      margin: 0px;
+    }
+
+    ul.nav {
+      width:100%;
+      margin:0;
+      padding:0;
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      border-top: 1px solid #C4BFBF;
+      list-style:none;
+      background-color: white;
+      text-align:center;
+      font-family: sans-serif; 
+    }
+
+    .nav li { 
+      display:inline-block;
+      width:22%;
+      margin:2px;
+      padding:4px;
+    }
+
+    .nav a {
+      text-align:center;
+      margin:0;
+      border-right: 1px solid white;
+      display:block;
+      text-decoration: none;
+    }
+
+    .nav a:hover { 
+      background: lightblue;
+      border:none;
+    }
+
+    ul.nav li:last-child a {
+      border:none;
+    }​
+
     #mes1{
       text-align: center;
     }
@@ -94,19 +140,6 @@ ga('send', 'pageview');
     
 	.center{
 		margin: auto;
-	}
-    
-    .w3-bar {
-        margin-bottom: 0px;
-        position:fixed;
-		left: auto;
-		bottom: 0px;
-        margin-left: auto;
-        margin-right: auto;   
-	}
-	.w3-button {
-		padding: 70px 0;
-		text-align: center;
 	}
     
     .container1{
