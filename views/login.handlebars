@@ -2,6 +2,7 @@
 <html>
 <head>
 <script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -19,31 +20,29 @@ ga('send', 'pageview');
 <script src="/js/facebook.js"></script>
 
 <body>
-
 <div align="center">
-<h1>Triton Feed</h1>
+<h1><b>Triton<img src="https://image.spreadshirtmedia.com/image-server/v1/mp/designs/12044341,width=178,height=178,version=1343984838/trident-neptune.png" width="50" height="50">Feed</b></h1>
 </div> 
 <hr>
 
 <div align="center">
-    <h4>Welcome Tritons!</h4>
-			<img src="https://image.spreadshirtmedia.com/image-server/v1/mp/designs/12044341,width=178,height=178,version=1343984838/trident-neptune.png" width="50" height="50">
-		<h4>Login using your Online Card Office username and password</h4>
-		
+    <br>
+    <br>
+    <h4>Username: <input type="text" id="name" placeholder="Student ID without 'A'"></h4><br>
+    <h4>Password:<input type="password" id="password" placeholder="Your account password"></h4><br>
         <br>
-		Username: <input type="text" id="name" placeholder="Student ID without 'A'"><br>
         <br>
-		Password: <input type="password" id="password" placeholder="Your account password"><br>
-        <br>    
 		<button id="login" class="button"> Start Budgeting! </button>
 
-		<hr>
+		<br>
+        <br>
+        <br>
 		<p class="facebookLogin">Or login with Facebook:</p>
 		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 		</fb:login-button>
-		<hr>
+        <br>
 
-	</div>
+</div>
 
 <script type="text/javascript">
     
@@ -66,6 +65,37 @@ ga('send', 'pageview');
     
     
 <style>
+    
+  input[type=text] {
+  padding: 10px 15px;
+  margin: 5px 10px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius:10px;
+  outline: none;
+}
+
+  input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=password] {
+  padding: 10px 15px;
+  margin: 5px 10px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius:10px;
+  outline: none;
+}
+
+  input[type=text]:focus {
+  border: 3px solid #555;
+}
+    
 	.button {
         background-color: rgba(49, 152, 240, 0.74);
         border: none;
@@ -83,12 +113,29 @@ ga('send', 'pageview');
     .button:hover {
         background-color: rgba(253, 196, 42, 0.74);
     }    
-   
+    
     #light{
        background-color:rgba(194, 233, 245, 0.82);
        border-radius:20px;
+    }
+    
+    body{
+        font-family: 'Open Sans', sans-serif;
+        background-image: linear-gradient(rgba(121, 224, 255, 0.78), rgba(247, 255, 187, 0.58));
+        margin: 0;
+        background-attachment: fixed;
+    }
+    
+    h1{
+      font-style: bold;
+    }
+    
+    h4{
+       font-family: 'Open Sans', sans-serif;
+       font-size:18px;
     }
 </style>
 
 
 </body>
+</html>
