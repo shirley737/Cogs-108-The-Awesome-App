@@ -19,9 +19,8 @@ ga('send', 'pageview');
 <script src="/js/introHCI.js"></script>
 <script src="/js/facebook.js"></script>
 
-<body>
-    
-<div id="top"><p><a href="profile"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyAZkiP6SUoyEieBqaFL8XZpngh65bx8-yqMfOJFRGYebWJQ78" alt="person" style="width:48px;height:48px;border:0;"></a></p>
+<body>  
+<div class="top"><p><a href="profile"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyAZkiP6SUoyEieBqaFL8XZpngh65bx8-yqMfOJFRGYebWJQ78" alt="person" style="width:48px;height:48px;border:0;"></a></p>
 </div>
     
 <div class="container1">
@@ -36,11 +35,8 @@ ga('send', 'pageview');
 	  </div> 
 
 <hr>
-
-<div class="container1">    
-    <header><b> Purchase History</b></header>
-</div> 
-    <div class="form">
+ 
+<div class="form">
 <table align="center">
   <tr>
     <th>Item</th>
@@ -95,7 +91,10 @@ ga('send', 'pageview');
 
 <style>
     body{
-      margin: 0px;
+        font-family: 'Open Sans', sans-serif;
+        background-image: linear-gradient(rgba(121, 224, 255, 0.78), rgba(247, 255, 187, 0.58));
+        margin: 0;
+        background-attachment: fixed;
     }
 
     ul.nav {
@@ -105,7 +104,6 @@ ga('send', 'pageview');
       overflow: hidden;
       position: fixed;
       bottom: 0;
-      border-top: 1px solid #C4BFBF;
       list-style:none;
       background-color: white;
       text-align:center;
@@ -122,7 +120,6 @@ ga('send', 'pageview');
     .nav a {
       text-align:center;
       margin:0;
-      border-right: 1px solid white;
       display:block;
       text-decoration: none;
     }
@@ -136,9 +133,10 @@ ga('send', 'pageview');
       border:none;
     }​
 
-    #top{
+    .top{
         float:left;
-        position: fixed;
+        display:inline-block;
+        margin-top:0px;
     }
 
 	.button {
@@ -166,11 +164,15 @@ ga('send', 'pageview');
     }
 
     tr:nth-child(even) {
-      background-color: #dddddd;
+      background-color: rgba(221, 221, 221, 0.54);
     }
     
+    tr:nth-child(odd) {
+      background-color: rgba(255, 254, 254, 0.46);
+    }
     
     
 </style>
 
 </body>
+</html>
