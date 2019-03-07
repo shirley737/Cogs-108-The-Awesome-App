@@ -57,6 +57,8 @@ app.get('/message2', index.message2)
 app.get('/message3', index.message3)
 app.get('/message4', index.message4)
 app.get('/buySellPageB', index.buySellPageB)
+app.get('/buySell', index.buySellNew)
+app.get('/sell2', index.sell2)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

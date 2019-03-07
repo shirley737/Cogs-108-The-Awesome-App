@@ -152,3 +152,12 @@ exports.message4 = function(req, res){
 exports.buySellPageB = function(req, res){
   res.render('buySellPageB');
 };
+
+exports.buySellNew = function(req, res){
+  res.render('buySellNew');
+};
+
+exports.sell2 = function(req, res){
+  res.render('sell2');
+};
+
