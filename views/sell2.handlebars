@@ -5,33 +5,34 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/introHCI.js"></script>
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-135186913-1', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
+    
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 
 <body>
-
 <div class="container1">
 	<hr>
-    <h3><b>We have successfully created your sell request!</b></h3>
-    <h4>Other users can now contact you and make an exchange with you. </h4>
-    <br>
-    <input type="button" class="search" value="Go Back to Buy/Sell" onclick="window.location.href='buySell'" />
-	</div> 
+    <h2><b>Sell</b></h2>
+	</div>  
 
-<br><br>
+<hr>
+	<div class="container2" id = "light">
+	    <h3>I want to sell:</h3>
+        <br>
+        <h5>$ <input type="text" id="input"></h5>
+        <br>
+        <button id="sellButton" class="request"> Enter </button>
+	 </div>
+    
+     <div class="container2" id="result"> <h3> </h3> </div>
+    
+     <div class="container2" id="dark">  
+     <button id="confirm" class="button" > Yes </button>
+     <button id="deny" class="button"> No </button>   
+     </div>
+     <br><br><br><br>
 
 <!--navigation bar below -->  
 <div>
@@ -43,7 +44,44 @@ ga('send', 'pageview');
   </ul>
 </div>
 
+<script type="text/javascript">
+
+ 
+ document.getElementById("sellButton").onclick=function(){
+     var amount = document.getElementById("input").value;
+     
+     if(isNaN(amount)){
+         alert("Please enter a valid number!");
+     } else{
+         if (amount > 400) {
+         alert("Please enter a smaller amount!");
+     }else{
+     document.getElementById("result").innerHTML= "Are you sure you want to sell $"+amount+"?";
+     document.getElementById("confirm").style.display="inline";
+     document.getElementById("deny").style.display="inline";
+     
+     document.getElementById("deny").onclick = function () {
+        location.href = "sell2";
+    };
+//  put next page's file name here 
+     document.getElementById("confirm").onclick = function () {
+        window.location.href = "buySell2";
+            };
+        }
+     }
+ }
+        
+</script>
+    
 <style>
+    #confirm{
+        display: none;
+    }
+
+    #deny{
+        display: none;
+    }
+
     body{
       margin: 0px;
     }
@@ -85,10 +123,42 @@ ga('send', 'pageview');
     ul.nav li:last-child a {
       border:none;
     }​
-
+    
 	.center{
 		margin: auto;
 	}
+    
+ .button {
+     background-color: rgba(49, 152, 240, 0.74);
+     border: none;
+     color: white;
+     padding: 8px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+     border-radius:10px;
+}
+
+.request {
+     background-color: rgba(49, 152, 240, 0.74);
+     border: none;
+     color: white;
+     padding: 8px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+     border-radius:10px;
+}
+    
+.button:hover {
+  background-color: rgba(34, 214, 145, 0.73);
+}    
     
     .container1{
         text-align: center;
@@ -96,51 +166,18 @@ ga('send', 'pageview');
     }
     
     .container2{
+        margin: 40px;
         padding-bottom: 10px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
-        font-size: 12px;
+        font-size: 20px;
     }
-
-    .button {
-        background-color: rgba(49, 152, 240, 0.74);
-        border: none;
-        color: white;
-        padding: 8px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius:10px;
-    }
-
-    .search {
-        background-color: rgba(49, 152, 240, 0.74);
-        border: none;
-        color: white;
-        padding: 8px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius:10px;
-    }
-    
-    .button:hover {
-        background-color: rgba(34, 214, 145, 0.73);
-    }    
    
     #light{
        background-color:rgba(194, 233, 245, 0.82);
        border-radius:20px;
     }
-
+    
 </style>
-
-
 
 </body>
