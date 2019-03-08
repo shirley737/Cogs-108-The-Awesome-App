@@ -1,0 +1,7 @@
+body {
+      margin: 0px;
+      font-family: 'Open Sans', sans-serif;
+        background-image: linear-gradient(rgba(121, 224, 255, 0.78), rgba(247, 255, 187, 0.58));
+        margin: 0;
+        background-attachment: fixed;
+}
