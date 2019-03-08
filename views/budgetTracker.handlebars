@@ -32,18 +32,18 @@ ga('send', 'pageview');
 <hr>
 	  <div class="container2">
 	    <h3>Today 3/5/2019</h3>
-	    <div class = "smallRectangle"></div>
-	    <div class = "largeRectangle2"></div>
-	    <div class = "rightRectangle"></div>
+	    <div class = "bar1"></div>
+	    <div class = "more1"></div>
+<!--	    <div class = "rightRectangle"></div>-->
 	  </div>
 
 	<hr>
 
 	  <div class="container2">
 	    <h3>This Week 3/3-3/9</h3>
-	 	<div class = "smallRectangle2"></div>
-	    <div class = "largeRectangle2"></div>
-	    <div class = "rightRectangle"></div>        
+	 	<div class = "bar2"></div>
+	    <div class = "more2"></div>
+<!--	    <div class = "rightRectangle"></div>        -->
 	  </div> 
 
 <!--navigation bar below -->  
@@ -103,36 +103,47 @@ ga('send', 'pageview');
 	float: left;
 }
 
-.largeRectangle {
-	height: 50px;
-	width: 150px;
-	background-color: white;
-	border:1px solid black; 
-	float: left;
-}
-
- .rightRectangle {
-	height: 50px;
-	width: 50px;
-	background-color: white;
-	border:1px solid black; 
-	float: left;
-}
-
-  .smallRectangle2 {
-	height: 50px;
-	width: 40px;
+  .bar1 {
+    float:left;
+    position:relative;
+	height:50px;
+	width: 200px;
+    margin: 20px 20px;
 	background-color: #f4c443;
-	border:1px solid black; 
-	float: left;
+	border:2px solid rgba(129, 217, 250, 0.82); 
+    border-radius:10px 0px 0px 10px;
 }
 
-   .largeRectangle2 {
-	height: 50px;
-	width: 210px;
-	background-color: white;
-	border:1px solid black; 
-	float: left;
+   .more1 {
+    position:absolute;
+    left:256px;
+    top:230px;
+    height:50px;
+	width: 50px;
+	background-color: rgba(129, 217, 250, 0.82);
+	border:2px solid rgba(129, 217, 250, 0.82); 
+    border-radius:0px 10px 10px 0px;
+}
+    .bar2 {
+    float:left;
+    position:relative;
+	height:50px;
+	width: 75px;
+    margin: 20px 20px;
+	background-color: #f4c443;
+	border:2px solid rgba(129, 217, 250, 0.82); 
+    border-radius:10px 0px 0px 10px;
+}
+
+   .more2 {
+    position:absolute;
+    left:135px;
+    top:387px;
+    height:50px;
+	width:175px;
+	background-color: rgba(129, 217, 250, 0.82);
+	border:2px solid rgba(129, 217, 250, 0.82); 
+    border-radius:0px 10px 10px 0px;
 }
     .w3-bar {
         margin-bottom: 0px;
