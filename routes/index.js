@@ -160,4 +160,3 @@ exports.buySellNew = function(req, res){
 exports.sell2 = function(req, res){
   res.render('sell2');
 };
-
