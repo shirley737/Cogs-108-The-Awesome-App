@@ -6,6 +6,7 @@
     <script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
     <link href="/css/layout.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
 	
 <!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
@@ -43,53 +44,48 @@ ga('send', 'pageview');
 <body>
 <div class="container1">
 	<hr>
-    <h2><b>Buy & Sell</b></h2>
+    <h2><b>Buy/Sell</b></h2>
 	</div>  
 
 <hr>
-	<div class="row">
-        <div class="column">
-            <div class="containerB" id = "light">
-                <dialog id="dialog1">
-                    <p>This will take you to a list of people you can buy from so you can contact someone to make an exchange with immediately.</p>
-                    <button id="close">Close</button>
-                </dialog>
-                <button id="show" class="buttonDiag">?</button>
-                <script> 
-                var dialog = document.querySelector("#dialog1");
-                document.querySelector('#show').onclick = function() { 
+    <div class="containerB" id = "light">
+        <dialog id="dialog1">
+            <p>This will take you to a list of people you can buy from so you can contact someone to make an exchange with immediately.</p>
+            <button id="close">Close</button>
+        </dialog>
+        <button id="show" class="buttonDiag">?</button>
+        <script> 
+            var dialog = document.querySelector("#dialog1");
+            document.querySelector('#show').onclick = function() { 
                     dialog.show(); 
                 }; 
-                document.querySelector('#close').onclick = function() { 
+            document.querySelector('#close').onclick = function() { 
                     dialog.close(); 
-                }; 
-                </script>
-                <h4>I want to</h4>
-                <input type="button" class="search" value="BUY" onclick="window.location.href='sellers'" />
-            </div>
-        </div>
+            }; 
+        </script>
+            <h4>I want to</h4>
+            <input type="button" class="search" value="BUY" onclick="window.location.href='sellers'" />
+    </div>      
+    <hr>
 
-        <div class="column">
-            <div class="containerB" id="light">
-                <dialog id="dialog2">
-                    <p>This will allow you to input an amount you want to sell which will put you on the list sellers so that others can find you and contact you if they wish to make an exchange with you</p>
-                    <button id="close2">Close</button>
-                </dialog>
-                <button id="show2" class="buttonDiag">?</button>
-                <script> 
-                var dialog2 = document.querySelector("#dialog2");
-                document.querySelector('#show2').onclick = function() { 
+    <div class="containerB" id="light">
+        <dialog id="dialog2">
+            <p>This will allow you to input an amount you want to sell which will put you on the list of sellers so that others can find you and contact you if they wish to make an exchange with you</p>
+                <button id="close2">Close</button>
+        </dialog>
+        <button id="show2" class="buttonDiag">?</button>
+        <script> 
+            var dialog2 = document.querySelector("#dialog2");
+            document.querySelector('#show2').onclick = function() { 
                     dialog2.show(); 
                 }; 
-                document.querySelector('#close2').onclick = function() { 
+            document.querySelector('#close2').onclick = function() { 
                     dialog2.close(); 
-                }; 
-                </script>
+            }; 
+        </script>
                 
-                <h4>I want to</h4>
-                <input type="button" class="request" id="sendButton" value="SELL" onclick="window.location.href='sell2'" />
-            </div>
-        </div>
+        <h4>I want to</h4>
+        <input type="button" class="request" id="sendButton" value="SELL" onclick="window.location.href='sell2'" />
     </div> 
 
 <!--navigation bar below -->  
@@ -104,45 +100,6 @@ ga('send', 'pageview');
 
     
 <style>
-
-    ul.nav {
-      width:100%;
-      margin:0;
-      padding:0;
-      overflow: hidden;
-      position: fixed;
-      bottom: 0;
-      border-top: 1px solid #C4BFBF;
-      list-style:none;
-      background-color: white;
-      text-align:center;
-      font-family: sans-serif; 
-    }
-
-    .nav li { 
-      display:inline-block;
-      width:22%;
-      margin:0px 4px 0px 4px;
-      padding:2px;
-    }
-
-    .nav a {
-      text-align:center;
-      margin:0;
-      border-right: 1px solid white;
-      display:block;
-      text-decoration: none;
-    }
-
-    .nav a:hover { 
-      background: lightblue;
-      border:none;
-    }
-
-    ul.nav li:last-child a {
-      border:none;
-    }​
-    
     #confirm{
         display: none;
     }
@@ -240,18 +197,6 @@ ga('send', 'pageview');
        background-color: aliceblue;
        border-radius:20px;
     }
-
-    .column {
-        float: left;
-        width: 50%;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
     
 </style>
 

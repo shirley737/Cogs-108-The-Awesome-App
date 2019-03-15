@@ -35,7 +35,7 @@ exports.buyers = function(req, res){
   res.render('buyers',{
     "users": [
     { "imageURL": "http://lorempixel.com/100/100/people/9",
-      "name": "Emi Oda",
+      "name": "Mimi Lesley",
       "amount": "$200"
     },
     { "imageURL": "http://lorempixel.com/100/100/people/10",
@@ -70,7 +70,7 @@ exports.sellers = function(req, res){
   res.render('sellers',{
      "users": [
     { "imageURL": "http://lorempixel.com/100/100/people/9",
-      "name": "Emi Oda",
+      "name": "Mimi Lesley",
       "amount": "$200"
     },
     { "imageURL": "http://lorempixel.com/100/100/people/10",
